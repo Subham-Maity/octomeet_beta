@@ -54,7 +54,7 @@ export const AuthForm = () => {
     >
       <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
         <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
-          <Input label="Email" id="email" register={register} />
+          <Input errors={errors} label="Email" id="email" register={register} />
         </form>
       </div>
     </div>
