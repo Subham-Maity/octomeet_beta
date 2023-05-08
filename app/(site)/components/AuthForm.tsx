@@ -37,5 +37,10 @@ export const AuthForm = () => {
       //NextAuth SignIn
     }
   };
+
+  const socialAction = (action: string) => {
+    setIsLoading(true);
+    //NextAuth SignIn
+  };
   return <div>Auth Form!</div>;
 };
