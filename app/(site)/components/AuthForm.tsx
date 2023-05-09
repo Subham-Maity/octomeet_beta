@@ -102,6 +102,13 @@ export const AuthForm = () => {
             />
           </div>
         </div>
+        <div className="flex gap-2 justify-center text-sm mt-6 px-2 text-gray-500">
+          <div>
+            {variant === "LOGIN"
+              ? "Don't have an account?"
+              : "Already have an account?"}
+          </div>
+        </div>
       </div>
     </div>
   );
