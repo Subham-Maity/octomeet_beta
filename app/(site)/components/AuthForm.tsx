@@ -66,6 +66,7 @@ export const AuthForm = () => {
             id="email"
             type="email"
             register={register}
+            disabled={isLoading}
           />
           <Input
             errors={errors}
@@ -73,6 +74,7 @@ export const AuthForm = () => {
             id="Password"
             type="password"
             register={register}
+            disabled={isLoading}
           />
           <div>
             <Button disabled={isLoading} fullWidth type="submit">
