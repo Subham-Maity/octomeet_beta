@@ -2,6 +2,7 @@
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Input from "@/app/components/inputs/Input";
+import Button from "@/app/components/Button";
 
 type Variant = "LOGIN" | "REGISTER";
 
@@ -71,6 +72,9 @@ export const AuthForm = () => {
             type="password"
             register={register}
           />
+          <div>
+            <Button>Click Me</Button>
+          </div>
         </form>
       </div>
     </div>
