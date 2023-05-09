@@ -73,7 +73,9 @@ export const AuthForm = () => {
             register={register}
           />
           <div>
-            <Button>Click Me</Button>
+            <Button disabled={isLoading} fullWidth type="submit">
+              {variant === "LOGIN" ? "Sign in" : "Register"}
+            </Button>
           </div>
         </form>
       </div>
